@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+     <title>Contacts</title>
+     <meta charset="utf-8">
+    
+     <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="css/form.css">
+
+     <script src="js/jquery.js"></script>
+     <script src="js/jquery-migrate-1.1.1.js"></script>
+     
+  
+  
+     </head>
+     <body  class="">
+
+<!--==============================header=================================-->
+<header>
+    <div class="container_12">
+            <div class="socials">
+                    <a href="#"></a>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                    <a href="#" class="last"></a>
+            </div>
+    
+            <span><a href="index.html"><img src="images/logo.png" alt="Le palais" ></a> </span>
+    
+            <div class="menu_block">
+                    <nav id="bt-menu" class="bt-menu">
+                            <a href="#" class="bt-menu-trigger"><span>Menu</span></a>
+                                    <ul>
+                                            <li class="current bt-icon "><a href="index.html">Home</a></li>
+                                            <li class="bt-icon"><a href="about.html">About</a></li>
+                                            <li class="bt-icon"><a href="menu.html">Menu</a></li>
+                                            <li class="bt-icon"><a href="blog.html">Blog</a></li>
+                                            <li class="bt-icon"><a href="reservation.html">Reservation</a></li>
+                                            <li class="bt-icon"><a href="contact.html">Contacts</a></li>
+                                    </ul>
+                     </nav>
+            </div>        
+        </div>
+    </div>
+    <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
+              </div>
+          </div>
+    </header>
+
+<!--==============================Content=================================-->
+
+<div class="content contact">
+  <div class="container_12">
+  
+      <div class="clear"></div>
+      <div class="grid_4">
+        <h3 class="head3">Address</h3>
+              <div class="map">
+
+
+                <address>
+                              <dl>
+                                  <dt>Le Palais <br>
+                                      4089 Avenue Du Palmier,<br>
+                                      Sousse, kantaoui.
+                                  </dt>
+                                  <dd><span>Telephone:</span>+216 25 952 040</dd>
+                                  <dd><span>infoline:</span>+216 24 768 948</dd>
+                                  <dd>E-mail: <a href="#" class="col2">LePalaiSousse@gmail.com</a></dd>
+                                  <dd>Facebook: <a href="#" class="col2">@LePalaiSousse</a></dd>                             
+                              
+                                </dl>
+                </address>
+                        
+            </div>
+      </div>
+      <div class="grid_8">
+        <h3 class="head3">Contact Form</h3>
+              <form id="form">
+                              
+                        <div class="success_wrapper">
+                        <div class="success-message">Contact form submitted</div>
+                        </div>
+                        <label class="name">
+                        <input type="text" placeholder="Name:" data-constraints="@Required @JustLetters" />
+                        <span class="empty-message">*This field is required.</span>
+                        <span class="error-message">*This is not a valid name.</span>
+                        </label>
+                      
+                        <label class="email">
+                        <input type="text" placeholder="E-mail:" data-constraints="@Required @Email" />
+                        <span class="empty-message">*This field is required.</span>
+                        <span class="error-message">*This is not a valid email.</span>
+                        </label>
+                         <label class="phone">
+                            <input type="text" placeholder="Phone:" data-constraints="@Required @JustNumbers"/>
+                            <span class="empty-message">*This field is required.</span>
+                            <span class="error-message">*This is not a valid phone.</span>
+                            </label>
+                        <label class="message">
+                        <textarea placeholder="Message:" data-constraints='@Required @Length(min=20,max=999999)'></textarea>
+                        <span class="empty-message">*This field is required.</span>
+                        <span class="error-message">*The message is too short.</span>
+                        </label>
+                        <div>
+                        <div class="clear"></div>
+                        <div class="btns">
+                        <a href="#" data-type="reset" class="btn">Annuler</a>
+                        <a href="#" data-type="submit" class="btn">Envoyer</a></div>
+                        </div>
+                        </form>   
+      </div>
+  </div>
+</div>
+
+<!--==============================footer=================================-->
+
+<footer>    
+  <div class="container_12">
+    <div class="grid_6 prefix_3">
+      <a href="index.html" ></a><img src="images/logo.png" alt=""></a>
+      <div class="copy">
+          Adresse : Rue Palmier,ElKntaoui,Sousse
+      </div>
+    </div>
+  </div>
+</footer>
+       <script>
+      $(document).ready(function(){ 
+         $(".bt-menu-trigger").toggle( 
+          function(){
+            $('.bt-menu').addClass('bt-menu-open'); 
+          }, 
+          function(){
+            $('.bt-menu').removeClass('bt-menu-open'); 
+          } 
+        ); 
+      }) 
+    </script>
+ 
+</body>
+
+</html>

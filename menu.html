@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+     <title>Menu</title>
+     <meta charset="utf-8">
+
+   
+     <link rel="stylesheet" href="css/style.css">
+     <script src="js/jquery.js"></script>
+     <script src="js/jquery-migrate-1.1.1.js"></script>
+     
+     </head>
+     <body  class="">
+
+<!--==============================header=================================-->
+<header>
+  <div class="container_12">
+          <div class="socials">
+                  <a href="#"></a>
+                  <a href="#"></a>
+                  <a href="#"></a>
+                  <a href="#" class="last"></a>
+          </div>
+  
+          <span><a href="index.html"><img src="images/logo.png" alt="Le palais" ></a> </span>
+  
+          <div class="menu_block">
+                  <nav id="bt-menu" class="bt-menu">
+                          <a href="#" class="bt-menu-trigger"><span>Menu</span></a>
+                                  <ul>
+                                          <li class="current bt-icon "><a href="index.html">Home</a></li>
+                                          <li class="bt-icon"><a href="about.html">About</a></li>
+                                          <li class="bt-icon"><a href="menu.html">Menu</a></li>
+                                          <li class="bt-icon"><a href="blog.html">Blog</a></li>
+                                          <li class="bt-icon"><a href="reservation.html">Reservation</a></li>
+                                          <li class="bt-icon"><a href="contact.html">Contacts</a></li>
+                                  </ul>
+                   </nav>
+          </div>        
+      </div>
+  </div>
+  <div class="clear"></div>
+  </div>
+  <div class="clear"></div>
+            </div>
+        </div>
+  </header>
+<!--==============================Content=================================-->
+
+<div class="content">
+  <div class="container_12">
+    <div class="grid_12">
+      <h3 class="head2">Nos Menu</h3>
+    </div>  
+    
+    <div class="tabs tb gallery">
+             
+             <div class="div-tabs">
+              <div  id="tab-1" class="tab-content gallery1">
+                  <div class="grid_3">
+                    <a href="images/menu1.jpg" class="gal"><img src="images/menu1.jpg" alt=""><span></span></a>
+                    <div class="col2"><span class="col3"><a href="#">CheeseEverywere</a></span>   dt 12</div>
+                  </div>
+                  <div class="grid_3">
+                    <a href="images/menu2.jpg" class="gal"><img src="images/menu2.jpg" alt=""><span></span></a>
+                    <div class="col2"><span class="col3"><a href="#">CheeseEverywere</a></span>  dt 12</div>
+                  </div>
+                  <div class="grid_3">
+                    <a href="images/menu3.jpg" class="gal"><img src="images/menu3.jpg" alt=""><span></span></a>
+                    <div class="col2"><span class="col3"><a href="#">CheeseEverywere</a></span>  dt 12</div>
+                  </div>
+                  <div class="grid_3">
+                    <a href="images/menu4.jpg" class="gal"><img src="images/menu4.jpg" alt=""><span></span></a>
+                    <div class="col2"><span class="col3"><a href="#">CheeseEverywere</a></span>  dt 12</div>
+                  </div>
+
+              </div>
+              
+              </div>
+
+             </div>
+        </div>
+  </div>
+</div>
+
+<!--==============================footer=================================-->
+
+<footer >    
+  <div class="container_12">
+    <div class="grid_6" style="margin-left:25%">
+      <a href="index.html"><img src="images/logo.png" style="width:40% " alt=""></a>
+      <div class="copy">
+          Adresse : Rue Palmier,ElKntaoui,Sousse
+      </div>
+    </div>
+  </div>
+</footer>
+       <script>
+      $(document).ready(function(){ 
+         $(".bt-menu-trigger").toggle( 
+          function(){
+            $('.bt-menu').addClass('bt-menu-open'); 
+          }, 
+          function(){
+            $('.bt-menu').removeClass('bt-menu-open'); 
+          } 
+        ); 
+      }) 
+    </script>
+</body>
+
+</html>
